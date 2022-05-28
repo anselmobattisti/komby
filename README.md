@@ -2,8 +2,18 @@
 
 ## The Problem
 
-**Finding all the possible partitions of a list maintaining in the partition the order of the elements in 
-the original list.**
+Finding all the possible partitions of a list maintaining in the partition the order of the elements in 
+the original list, and all the elements in the original list must be in some partition.
+
+A list with 3 elements, for example [1, 2, 3], will produce 2<sup>n-1</sup> = 4 possible partitions:
+
+```
+1 - [[1, 2, 3]]
+2 - [[1, 2], [3]]
+3 - [[1], [2, 3]]
+4 - [[1], [2], [3]]
+```
+
 
 ## Usage
 
