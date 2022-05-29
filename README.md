@@ -20,7 +20,7 @@ A list with 3 elements, for example [1, 2, 3], will produce 2<sup>n-1</sup> = 4 
 **Code:**
 
 ```Python
-    import Komby
+    from komby.komby import Komby
 
     data = [1, 2, 3]
 
