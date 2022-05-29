@@ -4,7 +4,7 @@ import math
 class Komby:
 
     @staticmethod
-    def total_partitions(data: []):
+    def total_partitions(data):
         """
         Compute the total of possible partitions of a list.
 
@@ -19,7 +19,7 @@ class Komby:
         return int(math.pow(2, (n - 1)))
 
     @staticmethod
-    def partitions(data: [], sorted=False):
+    def partitions(data, sorted=False):
         """
         Create the partitions of a list.
 
@@ -61,4 +61,3 @@ class Komby:
             partitions.sort(key=len)
 
         return partitions
-

@@ -1,5 +1,5 @@
 import unittest
-from src.komby.komby import Komby
+from komby.komby import Komby
 
 
 class KombyTest(unittest.TestCase):
