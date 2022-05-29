@@ -59,4 +59,3 @@ class KombyTest(unittest.TestCase):
         print("Partitions:")
         for p in partitions:
             print("\t - {}".format(p))
-
