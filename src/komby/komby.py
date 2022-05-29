@@ -19,7 +19,7 @@ class Komby:
         return int(math.pow(2, (n - 1)))
 
     @staticmethod
-    def partitions(data, sorted=False):
+    def partitions(data, sorted=False, size=0):
         """
         Create the partitions of a list.
 
@@ -32,6 +32,7 @@ class Komby:
 
         :param data: the list
         :param sorted: return the partitions sorted by the size of the partition
+        :param size: get only the partitions with a specific size
         :return: []
         """
         partitions = []
@@ -60,4 +61,12 @@ class Komby:
         if sorted:
             partitions.sort(key=len)
 
-        return partitions
+        if size > 0:
+            prt = []
+            for p in partitions:
+                if len(p) == size:
+                    prt.append(p)
+
+            return prt
+        else:
+            return partitions

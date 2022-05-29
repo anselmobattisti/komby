@@ -53,3 +53,8 @@ You can install Komby easily via pip:
 ```shell
 pip install -U komby
 ```
+
+## Tests
+
+![Tests](https://github.com/anselmobattisti/komby/actions/workflows/tests.yml/badge.svg)
+

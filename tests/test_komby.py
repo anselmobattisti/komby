@@ -32,6 +32,10 @@ class KombyTest(unittest.TestCase):
         data = [1, 2, 3]
         self.assertEqual(Komby.partitions(data), [[[1, 2, 3]], [[1, 2], [3]], [[1], [2, 3]], [[1], [2], [3]]])
 
+    def test_partitions_size_2(self):
+        data = [1, 2, 3]
+        self.assertEqual(Komby.partitions(data, size=2), [[[1, 2], [3]], [[1], [2, 3]]])
+
     def test_partitions_sorted(self):
         """
         Verify if the sort operation worked
