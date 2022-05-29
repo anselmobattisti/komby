@@ -32,9 +32,17 @@ class Komby:
 
         :param data: the list
         :param sorted: return the partitions sorted by the size of the partition
-        :param size: get only the partitions with a specific size
+        :param size: get only the partitions with a specific size, if size == 0 all the partitions will be created
         :return: []
         """
+
+        if not type(data) == list:
+            raise TypeError("The data must be a list.")
+
+        if size < 0:
+            print(size)
+            raise TypeError("the size must be greater than -1.")
+
         partitions = []
         total = Komby.total_partitions(data)
         n = len(data) - 1

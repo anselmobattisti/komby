@@ -63,3 +63,23 @@ class KombyTest(unittest.TestCase):
         print("Partitions:")
         for p in partitions:
             print("\t - {}".format(p))
+
+    def test_size_less_than_minus_one(self):
+
+        try:
+            data = [1, 2, 3]
+            Komby.partitions(data, size=-2)
+        except TypeError:
+            pass
+        else:
+            self.fail('Size must be greater than -1.')
+
+    def test_data_list(self):
+
+        try:
+            data = ""
+            Komby.partitions(data)
+        except TypeError:
+            pass
+        else:
+            self.fail('Data must be a list.')
